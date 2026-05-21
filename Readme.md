@@ -364,14 +364,6 @@ Swagger UI available at:
 http://localhost:5000/docs
 ```
 
-Production:
-
-```txt
-https://api.appshayu.in/docs
-```
-
----
-
 # Scalability Notes
 
 This project follows scalable backend architecture principles.
