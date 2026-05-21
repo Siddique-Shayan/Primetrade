@@ -16,15 +16,6 @@ This project demonstrates:
 
 ---
 
-# Live Deployment
-
-| Service | URL |
-|---|---|
-| Frontend | https://appshayu.in |
-| Backend API | https://api.appshayu.in |
-| Swagger Docs | https://api.appshayu.in/docs |
-
----
 
 # Tech Stack
 
@@ -37,7 +28,6 @@ This project demonstrates:
 - JWT Authentication
 - bcryptjs
 - Swagger UI
-- Docker (Optional)
 
 ---
 
@@ -89,8 +79,7 @@ Example entity:
 
 ## Security Features
 
-- Helmet Security
-- Rate Limiting
+- Helmet Securit
 - Input Validation
 - CORS Protection
 - HTTPOnly Cookies
@@ -123,7 +112,6 @@ backend/
 │   ├── middlewares/
 │   ├── models/
 │   ├── routes/
-│   ├── services/
 │   ├── utils/
 │   ├── validations/
 │   └── index.js
@@ -144,10 +132,8 @@ frontend/
 │   ├── api/
 │   ├── components/
 │   ├── context/
-│   ├── layouts/
 │   ├── pages/
 │   ├── routes/
-│   ├── utils/
 │   └── App.jsx
 │
 ├── package.json
@@ -196,18 +182,18 @@ Add:
 
 ```env
 PORT=5000
-
 NODE_ENV=development
+BASE_PATH=/api/v1
 
-MONGO_URI=your_mongodb_atlas_uri
+MONGODB_URI=your_mongodb_atlas_uri
+FRONTEND_ORIGIN=http://localhost:5173
 
-REDIS_URL=your_redis_cloud_url
+ACCESS_TOKEN_SECRET=PrimetradeinternshipRound0AccessToken
+ACCESS_TOKEN_EXPIRY=15m
 
-JWT_SECRET=your_super_secret_key
+REFRESH_TOKEN_SECRET=PrimetradeinternshipRound0RefreshToken
+REFRESH_TOKEN_EXPIRY=7d
 
-JWT_REFRESH_SECRET=your_refresh_secret_key
-
-CLIENT_URL=http://localhost:5173
 ```
 
 ---
@@ -237,7 +223,7 @@ http://localhost:5000
 Swagger Docs:
 
 ```txt
-http://localhost:5000/docs
+http://localhost:5000/api-docs
 ```
 
 ---
@@ -384,16 +370,6 @@ https://api.appshayu.in/docs
 
 ---
 
-# Docker Support (Optional)
-
-Run Redis locally:
-
-```bash
-docker run --name my-redis -p 6379:6379 -d redis
-```
-
----
-
 # Scalability Notes
 
 This project follows scalable backend architecture principles.
@@ -437,19 +413,6 @@ MongoDB Atlas
 Redis Cloud
 ```
 
----
-
-# Deployment Platforms
-
-| Service | Platform |
-|---|---|
-| Frontend | Vercel |
-| Backend | Render |
-| Database | MongoDB Atlas |
-| Cache | Redis Cloud |
-| Repository | GitHub |
-
----
 
 # Git Commands
 

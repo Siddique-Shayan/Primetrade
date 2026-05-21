@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaTasks } from "react-icons/fa";
 
 import { useAuth } from "../context/AuthContext";
+import {toast} from 'react-toastify';
 
 const Navbar = () => {
   const navigate = useNavigate();
