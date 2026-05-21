@@ -194,6 +194,8 @@ ACCESS_TOKEN_EXPIRY=15m
 REFRESH_TOKEN_SECRET=PrimetradeinternshipRound0RefreshToken
 REFRESH_TOKEN_EXPIRY=7d
 
+REDIS_URL=your_redis_cloud_url
+
 ```
 
 ---
