@@ -1,6 +1,5 @@
 import { validationResult } from "express-validator";
 import { ApiError } from "../utils/ApiError.js";
-import { HttpStatusCode } from "axios";
 
 export const validate = (req, res, next) => {
   const errors = validationResult(req);
