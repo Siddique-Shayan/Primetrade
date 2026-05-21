@@ -14,7 +14,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: [Env.FRONTEND_ORIGIN || "http://localhost:5173" , "http://localhost:8000"],
+    origin: "https://primetrade-two-sepia.vercel.app",
     credentials: true,
   })
 );
